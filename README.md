@@ -20,6 +20,7 @@ Whisper AI 모델을 활용해 MP4 파일을 텍스트로 변환하는 웹사이
     ```
 
 ### **1.2. Pytorch 설치**
+- **Pytorch** : 파이토치는 딥러닝 프로젝트를 빌드(build)하는 데 도움을 주는 파이썬 프로그램용 라이브러리 입니다
 - **참고**: 설치 명령어는 사용하고 있는 운영체제 및 환경에 따라 달라질 수 있습니다. 공식 웹사이트를 참고하세요.
 - https://pytorch.kr/get-started/locally/
     ```bash
@@ -28,7 +29,7 @@ Whisper AI 모델을 활용해 MP4 파일을 텍스트로 변환하는 웹사이
     ```
 
 ### **1.3. Whisper AI 설치**
-    
+- **WhisperAI** : Whisper AI는 인공지능 기술을 이용하여 음성 언어를 자동으로 텍스트로 변환해주는 소프트웨어입니다.
     pip install git+https://github.com/openai/whisper.git 
     
 
