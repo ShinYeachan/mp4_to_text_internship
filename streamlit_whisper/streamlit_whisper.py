@@ -5,7 +5,7 @@ import os
 from docx import Document
 
 # ------------------------ Constants ------------------------
-MODEL_CHOICES = ["small", "base", "medium", "large"]
+MODEL_CHOICES = ["base", "small", "medium", "large"]
 
 
 # ------------------------ Utility Functions ------------------------
@@ -144,8 +144,9 @@ def main():
 
         with open(txt_file_name, 'r') as file:
             txt_data = file.read()
+        # Store in session state
         st.session_state.download_txt_file_name = f"{os.path.splitext(original_file_name)[0]}_transcription.txt"
-        st.session_state.download_docx_file_name = docx_file_name  # Store in session state
+        st.session_state.download_docx_file_name = docx_file_name
     # Display transcription and download buttons if available
     if st.session_state.transcription_text:
         st.markdown(st.session_state.transcription_text)
