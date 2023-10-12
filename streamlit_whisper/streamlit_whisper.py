@@ -5,7 +5,7 @@ import os
 from docx import Document
 
 # ------------------------ Constants ------------------------
-MODEL_CHOICES = ["small", "base", "medium", "large"]
+MODEL_CHOICES = ["base", "small", "medium", "large"]
 
 
 # ------------------------ Utility Functions ------------------------
