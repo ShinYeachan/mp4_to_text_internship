@@ -30,8 +30,10 @@ Whisper AI 모델을 활용해 MP4 파일을 텍스트로 변환하는 웹사이
 
 ### **1.3. Whisper AI 설치**
 - **WhisperAI** : Whisper AI는 인공지능 기술을 이용하여 음성 언어를 자동으로 텍스트로 변환해주는 소프트웨어입니다.
-    pip install git+https://github.com/openai/whisper.git 
     
+    ```bash
+    pip install git+https://github.com/openai/whisper.git  
+    ```
 
 ### **1.4. 기타 필요한 파이썬 패키지들 설치**
 
