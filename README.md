@@ -92,6 +92,41 @@ Whisper AI 모델을 활용해 MP4 파일을 텍스트로 변환하는 웹사이
 6. 전사 완료 시 텍스트 출력 및 원하는 확장자로 다운로드 가능.
 ![웹사이트캡처2](https://github.com/ShinYeachan/mp4_to_text_internship/assets/147697028/d95cdfa5-c4b3-4449-b503-7b7b7fa4567a)
 
+---
+
+# 에러 해결 방법: `ModuleNotFoundError: No module named 'exceptions'`
+
+Python 3에서 `docx` 패키지가 'exceptions' 모듈을 가져오려 할 때 발생하는 이 에러는, 설치된 `docx` 패키지가 Python 3.11과 호환되지 않음을 나타냅니다.
+
+## 해결 방법:
+
+### 1. 올바른 `docx` 패키지 사용 확인
+
+- Python에서 DOCX 파일 작업을 위한 가장 일반적인 라이브러리는 `python-docx`입니다.
+- 이 패키지가 설치되어 있는지, 그리고 유사한 이름의 다른 패키지가 아닌지 확인하세요.
+
+  ```bash
+  pip uninstall docx
+  pip install python-docx
+  ```
+
+  위의 명령어를 실행한 후, `from docx import Document`를 사용하면 `python-docx`에서 가져온 것입니다.
+
+### 2. 라이브러리 업데이트
+
+- 에러가 발생할 때 라이브러리가 최신 버전인지 항상 확인하는 것이 좋습니다.
+
+  ```bash
+  pip install --upgrade streamlit python-docx
+  ```
+
+### 3. 스크립트 확인
+
+- 프로젝트 디렉토리 또는 Python 경로에 있는 디렉토리에 `docx.py`라는 이름의 스크립트나 모듈이 없는지 확인하세요. 이로 인해 Python이 실제 라이브러리 대신 스크립트/모듈을 가져올 수 있습니다.
+- 에러 경로에서 `streamlit_whisper.py` 스크립트가 있다고 나타나므로 근처에 `docx.py`가 없는지 확인하세요.
+
+---
+
 
 ## **참조 링크**
 [YouTube 참조 동영상](https://www.youtube.com/watch?v=cNLXzXyuzUs&t=1023s)
